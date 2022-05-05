@@ -1,0 +1,15 @@
+print("hello world")
+
+print("\t-----------------------------------\n")
+print("\t---Merci de vous présenter en repondant à nos questions---\n")
+nom = input("\t veuillez entrer votre nom:")
+prenom = input("\t veuillez entrer votre prenom:")
+adresse = input("\t veuillez entrer votre adresse:")
+profession = input("\t veuillez entrer votre profession:")
+
+print("\t---Les informations vous concsernant sont:---")
+print("\tvotre nom est:",nom)
+print("\tvotre prenom est:",prenom)
+print("\tvotre adresse est:",adresse)
+print("\tvotre profession est:",profession)
+print("\t-----------------------------------")
