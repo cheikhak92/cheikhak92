@@ -4,8 +4,8 @@ export class Essai {
 
         public id?: string,
 
-        public Nom?: string,
+        public nom?: string,
 
-        public Prenom?: string) {}       
+        public prenom?: string) {}
 
     }

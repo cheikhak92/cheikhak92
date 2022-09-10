@@ -4,7 +4,7 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'sagamdb',
   connector: 'mongodb',
-  url: 'mongodb+srv://ndella:jiminie23@clustersagam.sf1hcbf.mongodb.net/sagamdb',
+  url: 'mongodb+srv://sntHelpDesk:snthelpdesk@helpdeskcluster.orzdv.mongodb.net/neutraliteDB',
   database: 'sagamdb',
   useNewUrlParser: true
 };
