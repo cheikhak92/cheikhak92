@@ -1,0 +1,45 @@
+<body>
+	<header>
+
+        <h4 class="logo1">Sagam Inscription.</h4>
+        <nav>
+
+            <ul>
+                <li><a class="soustitre" href="file:///C:/xampp/htdocs/project/ndella.html">View</a></li>
+                <li><span class="soustitre">Fill</span></li>
+                <li><a class="soustitre" href="#">About us</a></li>
+                <li><a class="soustitre" href="#">Contacts</a></li>
+            </ul>
+
+            <input id="searchbar" onkeyup="search_enterprises()" type="text"
+             name="search" placeholder="Search Enterprises..">
+
+        </nav>
+	</header>
+	<main>
+		<form action="ndella_insert.php" method="GET">
+
+			<fieldset>
+				<legend>List of Inscriptions</legend>
+        <table style="width: 100%;">
+          <thead style="background-color:lightsalmon">
+              <tr>
+                <th [hidden]="true">ID</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+              </tr>
+          </thead>
+          <tbody >
+              <tr *ngFor = "let essai of essais">
+                  <td [hidden]="true">{{ essai.id }}</td>
+                  <td>{{ essai.nom }}</td>
+                  <td>{{ essai.prenom }}</td>
+              </tr>
+          </tbody>
+      </table>
+      </fieldset>
+      <input type="submit" routerLink="/essai" value= "Retour">
+		</form>
+
+	</main>
+</body>

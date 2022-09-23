@@ -1,0 +1,37 @@
+<body>
+	<header>
+
+        <h4 class="logo1">Sagam Inscription.</h4>
+        <nav>
+
+            <ul>
+                <li><a class="soustitre" href="file:///C:/xampp/htdocs/project/ndella.html">View</a></li>
+                <li><span class="soustitre">Fill</span></li>
+                <li><a class="soustitre" href="#">About us</a></li>
+                <li><a class="soustitre" href="#">Contacts</a></li>
+            </ul>
+
+            <input id="searchbar" onkeyup="search_enterprises()" type="text"
+             name="search" placeholder="Search Enterprises..">
+
+        </nav>
+	</header>
+	<main>
+		<form action="ndella_insert.php" method="GET">
+
+			<fieldset>
+				<legend>Register a New Inscription</legend>
+
+        <label>Nom</label><input matInput type="text" name="Nom" [(ngModel)]="newEssai.nom" placeholder="Nom"><br>
+
+        <label>Prenom</label><input matInput type="text" name="Prenom" [(ngModel)]="newEssai.prenom" placeholder="Prenom"><br>
+
+        <input type="submit" value="Validate" name="valider" (click)="postEssai()">
+        <input type="submit" routerLink="/essailist" value= "list des inscrits">
+        <input type="reset" value= "reinitialize"><br>
+      </fieldset>
+
+		</form>
+
+	</main>
+</body>
